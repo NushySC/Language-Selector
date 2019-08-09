@@ -7,10 +7,18 @@ import LanguageSelector from './LanguageSelector';
 class App extends React.Component {
 	render() {
 		return (
-			<div className="ui container">
+			<div
+				className="ui container"
+				style={{
+					backgroundColor: 'lightGray',
+					padding: '3em',
+					margin: '2em',
+					borderRadius: '2em'
+				}}
+			>
 				<LanguageStore>
 					<LanguageSelector />
-					<ColorContext.Provider value="yellow">
+					<ColorContext.Provider value="green">
 						<UserCreate />
 					</ColorContext.Provider>
 				</LanguageStore>

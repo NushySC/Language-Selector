@@ -6,7 +6,8 @@ class Field extends React.Component {
 	render() {
 		const text = this.context.language === 'english' ? 'Name' : 'Имя';
 		return (
-			<div className="ui field">
+			<div style={{width: '50%', marginTop: '2em'}}
+			className="ui field">
 				<label>{text}</label>
 				<input />
 			</div>

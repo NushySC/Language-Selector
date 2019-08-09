@@ -10,15 +10,17 @@ export default class LanguageSelector extends Component {
 				? 'Select a language'
 				: 'Выбрать язык';
 		return (
-			<div className="segment ui">
+			<div className="label ui">
 				{/* this is not working  */}
 				{text}
 
 				<i
+					style={{margin: '0.5em'}}
 					className="flag us"
 					onClick={() => this.context.onLanguageChange('english')}
 				/>
 				<i
+					style={{margin: '0.5em'}}
 					className="flag ru"
 					onClick={() => this.context.onLanguageChange('russian')}
 				/>
